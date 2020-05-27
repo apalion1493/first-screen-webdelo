@@ -1,0 +1,66 @@
+<svg width="1200px" height="200px" viewBox="0 0 1232 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect x="167" y="2" width="111" height="15" id="rect-1"></rect>
+    </defs>
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fourth-slide" transform="translate(-105.000000, -419.000000)">
+            <g id="Group-12" transform="translate(105.000000, 416.000000)">
+                <rect id="timeline-total" fill="rgba()" x="0" y="159" width="1232" height="33"></rect>
+                <g id="step-5" transform="translate(1047.000000, 126.000000)">
+                    <polyline id="step-5-line" stroke="#FFFFFF" stroke-linecap="square" points="184.5 65.5 184.5 0.5 165.086884 0.5 170.083041 5.23931379 165.246803 10.6583725 184.5 10.6583725" style="stroke-dasharray: 118px; stroke-dashoffset: 0px;"></polyline>
+                    <rect id="step-5-timeline" fill="#FFF500" x="0" y="33" width="0" height="33"></rect>
+                    <text id="step-5-timeline-caption" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#333333" opacity="0">
+                        <tspan x="68.3803711" y="55">12 days</tspan>
+                    </text>
+                </g>
+                <g id="step-4" transform="translate(705.000000, 20.000000)">
+                    <text id="step-4-caption" font-family="Roboto-Light, Roboto" font-size="18" font-weight="300" fill="#FFFFFF" opacity="0">
+                        <tspan x="342" y="17">The payment for </tspan>
+                        <tspan x="342" y="38">services through bank </tspan>
+                        <tspan x="342" y="59">cards was realized</tspan>
+                    </text>
+                    <polyline id="step-4-line" stroke="#FFFFFF" stroke-linecap="square" points="342.5 171.5 342.5 73.6075068 369.612584 73.6075068" style="stroke-dasharray: 125px; stroke-dashoffset: 0px;"></polyline>
+                    <rect id="step-4-timeline" fill="#FFF853" x="0" y="139" width="0" height="33"></rect>
+                    <text id="step-4-timeline-caption" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#333333" opacity="0">
+                        <tspan x="146.380371" y="161">38 days</tspan>
+                    </text>
+                </g>
+                <g id="step-3" transform="translate(508.000000, 42.000000)">
+                    <text id="step-3-caption" font-family="Roboto-Light, Roboto" font-size="18" font-weight="300" fill="#FFFFFF" opacity="0">
+                        <tspan x="195" y="17">Testing the cabinets of </tspan>
+                        <tspan x="195" y="38">the carrier and the </tspan>
+                        <tspan x="195" y="59">client</tspan>
+                    </text>
+                    <polyline id="step-3-line" stroke="#FFFFFF" stroke-linecap="square" points="196.5 149.5 196.5 73.5 223.552662 73.5" style="stroke-dasharray: 103px; stroke-dashoffset: 0px;"></polyline>
+                    <rect id="step-3-timeline" fill="#FEFA95" x="0" y="117" width="0" height="33"></rect>
+                    <text id="step-3-timeline-caption" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#333333" opacity="0">
+                        <tspan x="74.3803711" y="139">17 days</tspan>
+                    </text>
+                </g>
+                <g id="step-2" transform="translate(185.000000, 0.000000)">
+                    <text id="step-2-caption" font-family="Roboto-Light, Roboto" font-size="18" font-weight="300" fill="#FFFFFF" opacity="0">
+                        <tspan x="322" y="17">Become an opportunity </tspan>
+                        <tspan x="322" y="38">to apply</tspan>
+                    </text>
+                    <polyline id="step-2-line" stroke="#FFFFFF" stroke-linecap="square" points="323.5 190.5 323.5 52.4963769 350.572521 52.4963769" style="stroke-dasharray: 165px; stroke-dashoffset: 0px;"></polyline>
+                    <rect id="step-2-timeline" fill="#FDFBCA" x="0" y="159" width="0" height="33"></rect>
+                    <text id="step-2-timeline-caption" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#333333" opacity="0">
+                        <tspan x="137.380371" y="181">62 days</tspan>
+                    </text>
+                </g>
+                <g id="step-1" transform="translate(0.000000, 42.000000)">
+                    <rect id="step-1-timeline" fill="#FFFFFF" x="0" y="117" width="0" height="33"></rect>
+                    <polyline id="step-1-line" stroke="#FFFFFF" stroke-linecap="square" points="184.5 149.5 184.5 73.5 211.987692 73.5" style="stroke-dasharray: 103px; stroke-dashoffset: 0px;"></polyline>
+                    <text id="step-1-caption" font-family="Roboto-Light, Roboto" font-size="18" font-weight="300" fill="#FFFFFF" opacity="0">
+                        <tspan x="184" y="17">Administrators can fill the </tspan>
+                        <tspan x="184" y="38">system with coefficients, </tspan>
+                        <tspan x="184" y="59">articles, reference texts</tspan>
+                    </text>
+                    <text id="step-1-timeline-caption" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#333333" opacity="0">
+                        <tspan x="67.3803711" y="139">32 days</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

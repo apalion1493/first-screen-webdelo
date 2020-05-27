@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="686px" height="711px" viewBox="0 0 686 711" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>soon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="60.4263436%" x2="50%" y2="1.65323869%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#FF5390" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-13.0%" y="-13.0%" width="125.9%" height="125.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="24.2438616" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="54.9371389%" id="linearGradient-3">
+            <stop stop-color="#383838" offset="0%"></stop>
+            <stop stop-color="#282828" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="workers" transform="translate(-369.000000, -129.000000)">
+            <g id="soon" transform="translate(398.000000, 189.000000)">
+                <circle id="Oval" stroke="#979797" fill="url(#linearGradient-1)" opacity="0.595844656" filter="url(#filter-2)" cx="313.802558" cy="283.237417" r="282.352372"></circle>
+                <circle id="Oval" fill="url(#linearGradient-3)" cx="311" cy="340" r="311"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

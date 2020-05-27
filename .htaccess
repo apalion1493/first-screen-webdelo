@@ -1,0 +1,20 @@
+AddType text/x-component .htc
+AddType application/x-httpd-php .php .htm .html .phtml .tpl
+RewriteEngine On
+RewriteBase /
+
+php_flag magic_quotes_gpc off
+
+RewriteCond %{REQUEST_FILENAME} vput
+
+RewriteRule !\.(js|ico|css|png)$ %{DOCUMENT_ROOT}/vput.html [L]
+
+RewriteCond %{REQUEST_FILENAME} stooller
+
+RewriteRule !\.(js|ico|css|png)$ %{DOCUMENT_ROOT}/stooller.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !/vput.html
+RewriteCond %{REQUEST_FILENAME} !/stooller.html
+RewriteCond %{REQUEST_FILENAME} !/assets/(.*)
+
+RewriteRule !\.(js|ico|css|ttf|woff|woff2|less)$ index.html [L]
