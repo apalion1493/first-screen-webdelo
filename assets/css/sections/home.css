@@ -178,7 +178,7 @@ span.lead {
     display: block;
     position: absolute;
     top: -52px;
-    left: 120px;
+    left: 142px;
 }
 
 .home-our-project__top-title-2 {
@@ -293,18 +293,6 @@ span.lead {
     align-items: center;
     position: relative;
 }
-
-/*.home-our-project_vput-item:before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    right: -24px;*/
-/*    top: 16px;*/
-/*    background: #ffffff;*/
-/*    width: 1px;*/
-/*    height: 33px;*/
-/*    display: block;*/
-/*    opacity: .5;*/
-/*}*/
 
 .home-our-project_vput-list__border {
     background: #ffffff;
@@ -500,13 +488,6 @@ span.lead {
     z-index: 0;
 }
 
-/*.home-our-project_tradeBot-container:before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*}*/
-
 .home-our-project_tradeBot-container:after {
     content: '';
     position: absolute;
@@ -604,7 +585,12 @@ span.lead {
     }
 
     .home-our-project_tradeBot-content {
-        max-width: 470px;
+        /*max-width: 470px;*/
+        max-width: 432px;
+    }
+
+    .home-our-project__top-title {
+        left: 120px;
     }
 
     .home-our-project__top-title-2 {
@@ -801,6 +787,10 @@ span.lead {
 @media (max-width: 1199.98px) {
     .home-our-project__top-title {
         left: 140px;
+    }
+
+    .home-our-project_tradeBot-content {
+        max-width: 470px;
     }
 }
 
