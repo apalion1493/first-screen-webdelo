@@ -155,10 +155,6 @@ span.lead {
 
 /*NEW STYLE #HOME*/
 
-.home-tradeBot-bg {
-    display: block;
-}
-
 .home_trade-bot-content {
     display: block;
 }
@@ -359,7 +355,7 @@ span.lead {
 }
 
 .home-tradeBot-bg {
-    background: #1D1324;
+    background: #1D1324 url("../../images/grid.svg") no-repeat center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -367,6 +363,7 @@ span.lead {
     left: 0;
     bottom: 0;
     right: 0;
+    display: block;
 }
 
 .home-tradeBot-bg:before {
@@ -377,9 +374,13 @@ span.lead {
     left: 0;
     right: 0;
     background: url("../../images/sections/home/grid-bg.svg") no-repeat center;
-    background-size: 100% auto;
+    background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+#home .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
 }
 
 .home__title {
@@ -495,7 +496,7 @@ span.lead {
     background: url("../../images/sections/home/bg-tb-green.svg") no-repeat left center;
     background-size: cover;
     width: 100%;
-    height: 311px;
+    height: 305px;
     z-index: 0;
 }
 
@@ -513,7 +514,7 @@ span.lead {
     top: 0;
     background: #3FC770;
     width: 200%;
-    height: 311px;
+    height: 305px;
     opacity: 0.6;
     z-index: 0;
 }
@@ -587,21 +588,11 @@ span.lead {
     top: -25px;
 }
 
-.home__wrapper-1 {
-    animation: moveRight 0.5s linear;
+.slick-active .home__wrapper-1,
+.slick-active .home__wrapper-2 {
+    animation: moveRight 0.5s linear !important;
     animation-fill-mode: forwards;
 }
-
-.home__wrapper-2 {
-    animation: moveRight 0.5s linear;
-    animation-fill-mode: forwards;
-}
-
-/*@media (min-width: 1500px) {*/
-/*    .home-tradeBot-bg__scheme-wrapper {*/
-/*        top: 230px;*/
-/*    }*/
-/*}*/
 
 @media (max-width: 1300px) {
     .home-our-project_vput-logo {
@@ -710,6 +701,10 @@ span.lead {
     display: none !important;
 }
 
+#home .slick-dots {
+    display: none !important;
+}
+
 #home .home-arrow .fp-controlArrow {
     display: block !important;
     top: 50%;
@@ -735,6 +730,71 @@ span.lead {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+}
+
+.home-container {
+    max-width: 100%;
+}
+
+.pagingInfo {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.home__btn-list {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.home__btn {
+    width: 45px;
+    height: 45px;
+    background: initial;
+    border-radius: 50%;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.home__btn:before {
+    content: '';
+    background: url("../../images/icons/arrow-left.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 15px;
+    height: 13px;
+    display: block;
+}
+
+.home__btn-right.home__btn:before {
+    transform: rotate(180deg);
+}
+
+.home__btn-left {
+    margin-right: 14px;
+}
+
+.home__btn-right {
+    margin-left: 14px;
+}
+
+.home__btn:hover {
+
+}
+
+.home__btn:focus,
+.home__btn:active,
+.home__btn:hover {
+    box-shadow: none;
+    outline: none;
 }
 
 @media (max-width: 1199.98px) {
@@ -822,6 +882,8 @@ span.lead {
     .home-our-project__top-title {
         font-size: 16px;
         line-height: 45px;
+        left: 20px;
+        margin-bottom: 0;
     }
 
     .home-our-project__title {
@@ -840,7 +902,9 @@ span.lead {
     }
 
     .home-our-project_vput-container,
-    .home-our-project_vput-container:after {
+    .home-our-project_tradeBot-container,
+    .home-our-project_vput-container:after,
+    .home-our-project_tradeBot-container:after {
         height: 219px;
     }
 
@@ -848,8 +912,20 @@ span.lead {
         left: 100%;
     }
 
+    .home-our-project_tradeBot-content {
+        margin-left: 20px;
+        padding-top: 80px;
+        width: auto;
+    }
+
     .home-our-project_vput-container {
         background: linear-gradient(244.97deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .home-our-project_tradeBot-container {
+        background: linear-gradient(257.08deg, rgba(63, 199, 101, .6) 3.13%, rgba(103, 169, 169, .6) 99.71%);
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
@@ -860,9 +936,15 @@ span.lead {
         min-height: auto;
     }
 
-    .home-our-project_vput-logo {
+    .home-our-project_vput-logo,
+    .home-our-project_tradeBot-logo {
         height: 45px;
         max-width: 145px;
+    }
+
+    .home-our-project_tradeBot-logo {
+        left: 20px;
+        top: 17px;
     }
 
     .home-our-project_vput-logo-language {
@@ -903,6 +985,7 @@ span.lead {
 
     #home .container {
         min-height: auto;
+        padding-top: 80px;
     }
 
     .home-our-project_tradeBot-list {
@@ -912,10 +995,12 @@ span.lead {
     .home-our-project_tradeBot-item-icon {
         width: 20px;
         height: 20px;
+        margin-top: 0;
     }
 
     .home-our-project_tradeBot-item {
         margin-bottom: 15px;
+        align-items: center;
     }
 
     .home-our-project_tradeBot-item br {
@@ -925,10 +1010,20 @@ span.lead {
     .home-our-project_tradeBot-item:last-child {
         margin-bottom: 0;
     }
+
+    .home__btn-list {
+        position: relative;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 340px) {
     .home-our-project__button {
         width: 100px;
+    }
+
+    .home-our-project_tradeBot-container,
+    .home-our-project_tradeBot-container:after {
+        height: 250px;
     }
 }
