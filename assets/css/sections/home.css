@@ -163,7 +163,8 @@ span.lead {
     padding-top: 103px;
     padding-bottom: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
     min-height: 100vh;
     position: relative;
 }
@@ -374,6 +375,7 @@ span.lead {
 .home__title {
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
 }
 
 .home__title-01 {
