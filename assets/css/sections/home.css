@@ -748,6 +748,7 @@ span.lead {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1;
 }
 
 .home__btn {
@@ -799,7 +800,7 @@ span.lead {
 
 @media (max-width: 1199.98px) {
     .home-our-project__top-title {
-        left: 180px;
+        left: 140px;
     }
 }
 
@@ -854,6 +855,18 @@ span.lead {
         padding-top: 30px;
         max-width: 432px;
     }
+
+    .home-our-project__top-title {
+        left: 100px;
+    }
+
+    .home-our-project__top-title-2 {
+        left: 85px;
+    }
+
+    .home-our-project_tradeBot-logo {
+        left: -90px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -877,6 +890,12 @@ span.lead {
 
     .home__title {
         margin-bottom: 60px;
+        padding-left: 15px;
+    }
+
+    .home-tradeBot-bg__scheme-wrapper {
+        top: -50px;
+        left: -65px;
     }
 
     .home-our-project__top-title {
@@ -1014,6 +1033,14 @@ span.lead {
     .home__btn-list {
         position: relative;
         justify-content: center;
+    }
+
+    .home-tradeBot-bg__scheme-wrapper svg {
+        max-width: 360px;
+    }
+
+    .home-tradeBot-bg__scheme-back {
+        left: 40px;
     }
 }
 
