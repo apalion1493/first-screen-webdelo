@@ -655,20 +655,17 @@ span.lead {
 }
 
 .home__wrapper__1 {
-    will-change: transform;
     animation: moveRight 0.5s linear;
     animation-fill-mode: forwards;
 }
 
 .home__wrapper__2 {
-    will-change: transform;
     animation: moveLeft 0.5s linear;
     animation-fill-mode: forwards;
 }
 
 .slick-active .home__wrapper-1,
 .slick-active .home__wrapper-2 {
-    will-change: transform;
     -webkit-animation: moveRight 0.5s linear !important;
     animation: moveRight 0.5s linear !important;
     -webkit-animation-fill-mode: forwards;
