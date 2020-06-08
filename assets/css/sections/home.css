@@ -654,18 +654,14 @@ span.lead {
     width: 100%;
 }
 
-.home__wrapper__1 {
-    animation: moveRight 0.5s linear;
+.home__wrapper.show {
+    -webkit-animation: moveLeft 1s linear !important;
+    animation: moveLeft 1s linear;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-.home__wrapper__2 {
-    animation: moveLeft 0.5s linear;
-    animation-fill-mode: forwards;
-}
-
-.slick-active .home__wrapper-1,
-.slick-active .home__wrapper-2 {
+.home__wrapper.hidden {
     -webkit-animation: moveRight 0.5s linear !important;
     animation: moveRight 0.5s linear !important;
     -webkit-animation-fill-mode: forwards;
