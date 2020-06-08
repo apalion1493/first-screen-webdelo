@@ -2743,15 +2743,15 @@
     });
 
     $slickElement.on('afterChange', function (event, slick, currentSlide, nextSlide) {
-        $('.home__wrapper').addClass('hidden').removeClass('show')
+        $('.home__wrapper').addClass('show').removeClass('hidden');
     });
 
     $slickElement.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        $('.home__wrapper').addClass('show').removeClass('hidden')
+        $('.home__wrapper').addClass('hidden').removeClass('show');
     });
 
     $slickElement.slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1000,
         fade: true,

@@ -652,20 +652,15 @@ span.lead {
     position: relative;
     margin-top: auto;
     width: 100%;
+    transition: 1s;
 }
 
 .home__wrapper.show {
-    -webkit-animation: moveLeft 1s linear !important;
-    animation: moveLeft 1s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    transform: translate3d(0, 0, 0);
 }
 
 .home__wrapper.hidden {
-    -webkit-animation: moveRight 0.5s linear !important;
-    animation: moveRight 0.5s linear !important;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    transform: translate3d(200%, 0, 0);
 }
 
 #icon-bot1,
@@ -778,45 +773,45 @@ span.lead {
     }
 }
 
-@-webkit-keyframes moveLeft {
-    to  {
-        left: 250%;
-    }
+/*@-webkit-keyframes moveLeft {*/
+/*    to  {*/
+/*        left: 250%;*/
+/*    }*/
 
-    from {
-        left: 0;
-    }
-}
+/*    from {*/
+/*        left: 0;*/
+/*    }*/
+/*}*/
 
-@keyframes moveLeft {
-    to  {
-        left: 250%;
-    }
+/*@keyframes moveLeft {*/
+/*    to  {*/
+/*        left: 250%;*/
+/*    }*/
 
-    from {
-        left: 0;
-    }
-}
+/*    from {*/
+/*        left: 0;*/
+/*    }*/
+/*}*/
 
-@-webkit-keyframes moveRight {
-    to  {
-        left: 0;
-    }
+/*@-webkit-keyframes moveRight {*/
+/*    to  {*/
+/*        left: 0;*/
+/*    }*/
 
-    from {
-        left: 250%;
-    }
-}
+/*    from {*/
+/*        left: 250%;*/
+/*    }*/
+/*}*/
 
-@keyframes moveRight {
-    to  {
-        left: 0;
-    }
+/*@keyframes moveRight {*/
+/*    to  {*/
+/*        left: 0;*/
+/*    }*/
 
-    from {
-        left: 250%;
-    }
-}
+/*    from {*/
+/*        left: 250%;*/
+/*    }*/
+/*}*/
 
 .fp-slides {
     width: 100%;
