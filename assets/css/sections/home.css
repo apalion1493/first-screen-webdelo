@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 #home {
     position: relative;
     top: 0;
@@ -27,10 +34,11 @@
     #home > video { width: 300%; left: -100%; }
 }
 /* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
-@supports (object-fit: cover) {
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
     #home > video {
         top: 0; left: 0;
         width: 100%; height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 }
@@ -69,8 +77,6 @@
     padding-bottom: 14px;
     width: 230px;
     text-align: center;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
     border-radius: 35px;
     font-size: 1.20rem;
 }
@@ -94,6 +100,8 @@
         bottom: 48px;
         z-index: 2;
         opacity: 0;
+        -webkit-transition: 2000ms;
+        -o-transition: 2000ms;
         transition: 2000ms;
     }
 
@@ -118,9 +126,11 @@
 
 @media (max-width: 991px) {
     #home video {
+        -webkit-filter: brightness(40%);
         filter: brightness(40%);
     }
     #home:before {
+        -webkit-filter: brightness(30%);
         filter: brightness(30%);
     }
     #home .bg-dark-opacity:before {
@@ -156,13 +166,20 @@ span.lead {
 /*NEW STYLE #HOME*/
 
 .home_trade-bot-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 #home .container {
     padding-top: 103px;
     padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
     min-height: 100vh;
@@ -218,8 +235,14 @@ span.lead {
 .home-our-project_vput-logo {
     background: #FFF0F0;
     border-radius: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 168px;
     width: 100%;
@@ -242,8 +265,16 @@ span.lead {
     text-transform: uppercase;
     color: #FFFFFF;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -284,14 +315,23 @@ span.lead {
 
 .home-our-project_vput-list {
     max-width: 384px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
 .home-our-project_vput-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -314,8 +354,14 @@ span.lead {
     max-width: 162px;
     width: 100%;
     height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border: 2px solid rgba(255, 255, 255, .5);
     background: initial;
@@ -374,7 +420,12 @@ span.lead {
 }
 
 .home__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: auto;
 }
@@ -411,14 +462,22 @@ span.lead {
 }
 
 .home-our-project_tradeBot-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 57px;
     margin-top: 24px;
 }
 
 .home-our-project_tradeBot-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -446,9 +505,16 @@ span.lead {
     max-width: 161px;
     width: 100%;
     height: 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    background: -o-linear-gradient(180.02deg, #3FC765 0%, #67A96D 127.32%);
     background: linear-gradient(269.98deg, #3FC765 0%, #67A96D 127.32%);
     border-radius: 33px;
     position: absolute;
@@ -508,8 +574,14 @@ span.lead {
 .header__btn-group {
     max-width: 177px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -520,15 +592,26 @@ span.lead {
     min-width: 45px;
     width: 45px;
     height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .header__btn-group-arrow:hover {
     border: 1px solid rgba(255, 255, 255, 1);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
+    -webkit-box-shadow: 0 0 20px 1px rgba(255,255,255,.5);
     box-shadow: 0 0 20px 1px rgba(255,255,255,.5);
 }
 
@@ -546,6 +629,8 @@ span.lead {
 }
 
 .header__btn-group-arrow-right .header__btn-group-arrow-icon {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -578,7 +663,9 @@ span.lead {
 
 .slick-active .home__wrapper-1,
 .slick-active .home__wrapper-2 {
+    -webkit-animation: moveRight 0.5s linear !important;
     animation: moveRight 0.5s linear !important;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -586,6 +673,7 @@ span.lead {
 #icon-human1,
 #icon-bot2,
 #icon-human2 {
+    -webkit-animation: 4s ease-in-out forwards moving-shema-bot;
     animation: 4s ease-in-out forwards moving-shema-bot;
 }
 
@@ -594,7 +682,55 @@ span.lead {
 }
 
 .home_vput-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+}
+
+@-webkit-keyframes moving-shema-bot {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes moving-shema-bot {
@@ -643,6 +779,16 @@ span.lead {
     }
 }
 
+@-webkit-keyframes moveLeft {
+    to  {
+        left: 250%;
+    }
+
+    from {
+        left: 0;
+    }
+}
+
 @keyframes moveLeft {
     to  {
         left: 250%;
@@ -650,6 +796,16 @@ span.lead {
 
     from {
         left: 0;
+    }
+}
+
+@-webkit-keyframes moveRight {
+    to  {
+        left: 0;
+    }
+
+    from {
+        left: 250%;
     }
 }
 
@@ -678,6 +834,8 @@ span.lead {
 #home .home-arrow .fp-controlArrow {
     display: block !important;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: 0;
 }
@@ -713,7 +871,11 @@ span.lead {
 }
 
 .home__btn-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     bottom: 30px;
@@ -726,11 +888,18 @@ span.lead {
     height: 45px;
     background: initial;
     border-radius: 50%;
+    -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
     border: 1px solid #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
@@ -746,6 +915,8 @@ span.lead {
 }
 
 .home__btn-right.home__btn:before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -764,6 +935,7 @@ span.lead {
 .home__btn:focus,
 .home__btn:active,
 .home__btn:hover {
+    -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
 }
@@ -968,12 +1140,14 @@ span.lead {
     }
 
     .home-our-project_vput-container {
+        background: -o-linear-gradient(205.03deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);
         background: linear-gradient(244.97deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
 
     .home-our-project_tradeBot-container {
+        background: -o-linear-gradient(192.92deg, rgba(63, 199, 101, .6) 3.13%, rgba(103, 169, 169, .6) 99.71%);
         background: linear-gradient(257.08deg, rgba(63, 199, 101, .6) 3.13%, rgba(103, 169, 169, .6) 99.71%);
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -1038,6 +1212,9 @@ span.lead {
     }
 
     .home-our-project_tradeBot-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1049,6 +1226,8 @@ span.lead {
 
     .home-our-project_tradeBot-item {
         margin-bottom: 15px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -1062,6 +1241,8 @@ span.lead {
 
     .home__btn-list {
         position: relative;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-top: 45px;
         bottom: 0;
