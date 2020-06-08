@@ -6,6 +6,8 @@ gruntConfig = {
                     "node_modules/fullpage.js/dist/jquery.fullpage.min.css",
                     "node_modules/bootstrap/dist/css/bootstrap.min.css",
                     "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css",
+                    "node_modules/slick-carousel/slick/slick-theme.css",
+                    "node_modules/slick-carousel/slick/slick.css",
                     "assets/css/common.css",
                     "assets/css/animations.css",
                     "assets/css/sections/preloader.css",
@@ -48,6 +50,7 @@ gruntConfig = {
                     "node_modules/particles.js/particles.js",
                     "node_modules/bowser/bowser.min.js",
                     "node_modules/bodymovin/build/player/bodymovin.js",
+                    "node_modules/slick-carousel/slick/slick.min.js",
                     "assets/js/preloader.class.js",
                     "assets/js/sections/preloader/initialize.js",
                     "assets/js/sections/home/initialize.js",
@@ -63,7 +66,8 @@ gruntConfig = {
                     "assets/js/diagrams/technologies.js",
                     "assets/js/sections/footer/initialize.js",
                     "assets/js/app.js",
-                    "assets/js/sections/who-we-are/initialize.js"
+                    "assets/js/sections/who-we-are/initialize.js",
+                    "assets/js/sections/animations.js"
                 ]
             }
         }

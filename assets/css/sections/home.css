@@ -36,20 +36,20 @@
     }
 }
 
-/*#home>.container {*/
-/*    padding-top: 0!important;*/
-/*}*/
-/*#home:before {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    background: url(/assets/video/vput_sample.jpg) center no-repeat;*/
-/*    background-size: cover;*/
-/*    filter: brightness(70%);*/
-/*}*/
+#home>.container {
+    padding-top: 0!important;
+}
+#home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/assets/video/vput_sample.jpg) center no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
 
 #home header {
     border-bottom: rgba(255,255,255,.31) 2px solid;
@@ -564,69 +564,6 @@ span.lead {
     z-index: 0;
 }
 
-/*.header__btn-group {*/
-/*    max-width: 177px;*/
-/*    width: 100%;*/
-/*    display: -webkit-box;*/
-/*    display: -ms-flexbox;*/
-/*    display: flex;*/
-/*    -webkit-box-align: center;*/
-/*    -ms-flex-align: center;*/
-/*    align-items: center;*/
-/*    -webkit-box-pack: justify;*/
-/*    -ms-flex-pack: justify;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*.header__btn-group-arrow {*/
-/*    background: initial;*/
-/*    border: 1px solid rgba(255, 255, 255, .5);*/
-/*    border-radius: 70px;*/
-/*    min-width: 45px;*/
-/*    width: 45px;*/
-/*    height: 45px;*/
-/*    display: -webkit-box;*/
-/*    display: -ms-flexbox;*/
-/*    display: flex;*/
-/*    -webkit-box-align: center;*/
-/*    -ms-flex-align: center;*/
-/*    align-items: center;*/
-/*    -webkit-box-pack: center;*/
-/*    -ms-flex-pack: center;*/
-/*    justify-content: center;*/
-/*    -webkit-transition: 0.3s;*/
-/*    -o-transition: 0.3s;*/
-/*    transition: 0.3s;*/
-/*}*/
-
-/*.header__btn-group-arrow:hover {*/
-/*    border: 1px solid rgba(255, 255, 255, 1);*/
-/*    -webkit-transition: 0.3s;*/
-/*    -o-transition: 0.3s;*/
-/*    transition: 0.3s;*/
-/*    -webkit-box-shadow: 0 0 20px 1px rgba(255,255,255,.5);*/
-/*    box-shadow: 0 0 20px 1px rgba(255,255,255,.5);*/
-/*}*/
-
-/*.header__btn-group-arrow:active,*/
-/*.header__btn-group-arrow:focus {*/
-/*    outline: none;*/
-/*}*/
-
-/*.header__btn-group-arrow-icon {*/
-/*    background: url("../../images/sections/home/arrow-left-icon.svg") no-repeat center;*/
-/*    background-size: 100% auto;*/
-/*    width: 15px;*/
-/*    height: 13px;*/
-/*    display: block;*/
-/*}*/
-
-/*.header__btn-group-arrow-right .header__btn-group-arrow-icon {*/
-/*    -webkit-transform: rotate(180deg);*/
-/*    -ms-transform: rotate(180deg);*/
-/*    transform: rotate(180deg);*/
-/*}*/
-
 .home-tradeBot-bg__scheme-wrapper {
     position: absolute;
     top: 40px;
@@ -652,14 +589,18 @@ span.lead {
     position: relative;
     margin-top: auto;
     width: 100%;
-    transition: 1s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .home__wrapper.show {
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
 .home__wrapper.hidden {
+    -webkit-transform: translate3d(200%, 0, 0);
     transform: translate3d(200%, 0, 0);
 }
 
