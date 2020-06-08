@@ -103,7 +103,7 @@
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-8 col-md-9 order-0 order-md-1 home_vput-content">
-                            <div class="home__wrapper home__wrapper-1">
+                            <div id="home__wrapper-2" class="home__wrapper home__wrapper-1">
                                 <div class="home-our-project home-our-project_vput">
                                     <div class="home-our-project_vput-container">
                                         <div class="home-our-project_vput-logo">
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-8 col-md-9 order-0 order-md-1 home_trade-bot-content">
-                            <div class="home__wrapper home__wrapper-2 test2">
+                            <div id="home__wrapper-1" class="home__wrapper home__wrapper-2 test2">
                                 <div class="home-our-project home-our-project_tradeBot">
                                     <div class="home-our-project_tradeBot-container">
                                         <div class="home-our-project_tradeBot-logo">
@@ -2564,17 +2564,13 @@
     });
 
     function delayBefore() {
-        $('.home__wrapper').css({
-            'animation':'moveRight 0.5s linear',
-            'animation-fill-mode':'forwards'
-        });
+        $('#home__wrapper-1').addClass('home__wrapper__1');
+        $('#home__wrapper-2').addClass('home__wrapper__1');
     }
 
     function delayAfter() {
-        $('.home__wrapper').css({
-            'animation':'moveLeft 0.5s linear',
-            'animation-fill-mode':'forwards'
-        });
+        $('#home__wrapper-1').addClass('home__wrapper__2');
+        $('#home__wrapper-2').addClass('home__wrapper__2');
     }
 
     let svgFlag = false;
