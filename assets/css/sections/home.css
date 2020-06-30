@@ -39,17 +39,17 @@
 #home>.container {
     padding-top: 0!important;
 }
-#home:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(/assets/video/vput_sample.jpg) center no-repeat;
-    background-size: cover;
-    filter: brightness(70%);
-}
+/*#home:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background: url(/assets/video/vput_sample.jpg) center no-repeat;*/
+/*    background-size: cover;*/
+/*    filter: brightness(70%);*/
+/*}*/
 
 #home header {
     border-bottom: rgba(255,255,255,.31) 2px solid;
@@ -198,8 +198,9 @@ span.lead {
 
 .home-our-project_vput-container {
     position: relative;
-    background: url("../../images/sections/home/vput-bg-start.svg") no-repeat right center;
-    background-size: contain;
+    /*background: url("../../images/sections/home/vput-bg-start.svg") no-repeat right center;*/
+    /*background-size: contain;*/
+    background: initial;
     height: 305px;
     max-width: 605px;
     margin-left: auto;
@@ -210,8 +211,11 @@ span.lead {
     position: absolute;
     top: 0;
     left: 0;
-    width: 564px;
+    width: 2000px;
+    background: url("../../images/sections/home/vput-bg-start.svg") no-repeat left center;
+    background-size: cover;
     z-index: 0;
+    height: 305px;
 }
 
 .home-our-project_vput-container:after {
@@ -223,6 +227,7 @@ span.lead {
     height: 305px;
     z-index: 0;
     background: rgba(94, 37, 216, .6);
+    display: none;
 }
 
 .home-our-project_vput-logo {
@@ -543,13 +548,23 @@ span.lead {
 
 .home-our-project_tradeBot-container {
     position: relative;
-    background: url("../../images/sections/home/bg-tb-green.svg") no-repeat left center;
-    background-size: cover;
     width: 100%;
     height: 305px;
     z-index: 0;
     max-width: 563px;
     margin-left: auto;
+    background: initial;
+}
+
+.home-our-project_tradeBot-container:before {
+    content: '';
+    position: absolute;
+    background: url("../../images/sections/home/bg-tb-green.svg") no-repeat left center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 2000px;
+    height: 305px;
 }
 
 .home-our-project_tradeBot-container:after {
@@ -562,6 +577,8 @@ span.lead {
     height: 305px;
     opacity: 0.6;
     z-index: 0;
+
+    display: none;
 }
 
 .home-tradeBot-bg__scheme-wrapper {
@@ -1075,17 +1092,37 @@ span.lead {
     }
 
     .home-our-project_vput-container {
+        /*background: -o-linear-gradient(205.03deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);*/
+        /*background: linear-gradient(244.97deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);*/
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: auto;
+        min-height: 219px;
+    }
+
+    .home-our-project_vput-container:before {
         background: -o-linear-gradient(205.03deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);
         background: linear-gradient(244.97deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
+        height: auto;
+        min-height: 219px;
     }
 
     .home-our-project_tradeBot-container {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: auto;
+        min-height: 219px;
+    }
+
+    .home-our-project_tradeBot-container:before {
         background: -o-linear-gradient(192.92deg, rgba(63, 199, 101, .6) 3.13%, rgba(103, 169, 169, .6) 99.71%);
         background: linear-gradient(257.08deg, rgba(63, 199, 101, .6) 3.13%, rgba(103, 169, 169, .6) 99.71%);
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
+        height: 100%;
+        min-height: 219px;
     }
 
     #home {
