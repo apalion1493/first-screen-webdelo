@@ -1,3 +1,3 @@
-if ( bowser.mobile === true ) {
-    $('#home video').remove();
-}
+// if ( bowser.mobile === true ) {
+//     $('#home video').remove();
+// }

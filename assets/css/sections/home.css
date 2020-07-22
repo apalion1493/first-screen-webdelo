@@ -10,8 +10,9 @@
 
 #home video {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
     width: auto; height: auto;
@@ -376,7 +377,16 @@ span.lead {
     outline: none;
 }
 
-.home-vput-bg {
+.home-container__item {
+    position: relative;
+}
+
+.home-container__item .container {
+    position: relative;
+    z-index: 1;
+}
+
+.home-vput-bg__mob {
     background: url("../../images/sections/home/home-bg.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
@@ -384,8 +394,7 @@ span.lead {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    display: none;
 }
 
 .home-tradeBot-bg {
@@ -1092,8 +1101,6 @@ span.lead {
     }
 
     .home-our-project_vput-container {
-        /*background: -o-linear-gradient(205.03deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);*/
-        /*background: linear-gradient(244.97deg, rgba(94, 37, 216, .6) 18.2%, rgba(245, 91, 42, .6) 117.06%);*/
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
         height: auto;
@@ -1226,6 +1233,14 @@ span.lead {
 
     .home-tradeBot-bg__scheme-back {
         left: 40px;
+    }
+    
+    #home video {
+        display: none;
+    }
+
+    .home-vput-bg__mob {
+        display: block;
     }
 }
 
